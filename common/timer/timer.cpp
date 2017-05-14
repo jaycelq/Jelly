@@ -31,7 +31,7 @@ TimerMgr::~TimerMgr()
 {
     for (uint32_t wheel_no = 0; wheel_no < WHEEL_CNT; wheel_no++)
     {
-        delete [] wheels[wheel_no];
+        delete wheels[wheel_no];
     }
 }
 
