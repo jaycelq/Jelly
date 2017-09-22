@@ -10,7 +10,8 @@
 #ifndef JELLY_NET_DETAIL_SOCKET_OPS_H
 #define JELLY_NET_DETAIL_SOCKET_OPS_H
 
-#include "detail/socket_type.h"
+#include "error_code.h"
+#include "net/detail/socket_type.h"
 
 namespace jelly {
 namespace net {
@@ -47,7 +48,7 @@ enum
 typedef unsigned char stage_type;
 
 socket_type accept(socket_type s, socket_addr_type* addr,
-    std::size_t* addr_len, net::error_code& ec);
+    std::size_t* addr_len, error_code& ec);
 
 } // namespace detail
 } // namespace net

@@ -1,14 +1,14 @@
-cmake_minimum_required(VERSION 2.8.0)
+cmake_minimum_required(VERSION 3.8.0)
 
-project (Jelly)
+project (jelly)
 
 set(CMAKE_CXX_STANDARD 11)
 
 message(STATUS "This is binary dir: " ${PROJECT_BINARY_DIR})
 message(STATUS "This is source dir: " ${PROJECT_SOURCE_DIR})
 
-include_directories(common)
+set(PROJECT_CMAKE_DIR ${PROJECT_SOURCE_DIR}/cmake)
+include(${PROJECT_CMAKE_DIR}/BuildOptions.cmake)
 
-add_subdirectory(common)
-add_subdirectory(net)
-add_subdirectory(test)
+include_directories(${PROJECT_SOURCE_DIR}/jelly)
+add_subdirectory(jelly)

@@ -2,6 +2,7 @@
 #include <time.h>
 #include <unistd.h>
 #include "timer/timer.h"
+#include "detail/socket_type.h"
 
 class TestTimer : public Timer
 {
