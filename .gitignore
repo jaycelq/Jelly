@@ -11,3 +11,6 @@ Session.vim
 *~
 # auto-generated tag files
 tags
+
+.idea/
+cmake-build-debug/
